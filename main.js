@@ -485,3 +485,310 @@ function displaySecondMenu(event) {
       break
   }
 }
+
+let articles = [
+  {
+    name: 'Lenovo IdeaPad 3 15ALC6',
+    img: 'https://img.pccomponentes.com/articles/1063/10639213/1359-lenovo-ideapad-3-15iau7-intel-core-i5-1235u-16gb-512gb-ssd-156.jpg',
+    price: '668,84€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Computer',
+    link: 'https://www.pccomponentes.com/portatil-lenovo-ideapad-3-15alc6-amd-ryzen-5-5500u-16gb-512-gb-ssd-156'
+  },
+
+  {
+    name: 'MSI AMD Radeon RX 6700 XT',
+    img: 'https://thumb.pccomponentes.com/w-530-530/articles/38/383415/1173-msi-amd-radeon-rx-6700-xt-mech-2x-12gb-oc-12gb-gddr6.jpg',
+    price: '655,60€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Components',
+    link: 'https://www.pccomponentes.com/msi-amd-radeon-rx-6700-xt-mech-2x-12gb-oc-12gb-gddr6?refurbished'
+  },
+
+  {
+    name: 'Sony PlayStation 5 Digital',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1080/10801090/157-sony-playstation-5-digital-slim.jpg',
+    price: '399€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Games',
+    link: 'https://www.pccomponentes.com/sony-playstation-5-digital-slim'
+  },
+
+  {
+    name: 'Gigabyte B550M Aorus Elite',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/30/300749/1475-gigabyte-b550m-aorus-elite.jpg',
+    price: '104,04€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Components',
+    link: 'https://www.pccomponentes.com/gigabyte-b550m-aorus-elite'
+  },
+
+  {
+    name: 'AMD Ryzen 9 9950X 4.3/5.7GHz',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1084/10845779/1544-amd-ryzen-9-9950x-43-57ghz.jpg',
+    price: '595,99€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Components',
+    link: 'https://www.pccomponentes.com/procesador-amd-ryzen-9-9950x-43-57ghz'
+  },
+
+  {
+    name: 'WD Black SN770 1TB',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1006/10060346/1242-wd-black-sn770-1tb-nvme-ssd.jpg',
+    price: '67,99€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Components',
+    link: 'https://www.pccomponentes.com/disco-duro-wd-black-sn770-1tb-disco-ssd-5150mb-s-nvme-pcie-40-m2-gen4-16gt-s'
+  },
+
+  {
+    name: 'Corsair Vengeance RGB Pro DDR4 3200',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/35/351295/1838-corsair-vengeance-rgb-pro-ddr4-3200-pc4-25600-32gb-2x16gb-cl16.jpg',
+    price: '129,98€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Components',
+    link: 'https://www.pccomponentes.com/corsair-vengeance-rgb-pro-ddr4-3200-pc4-25600-32gb-2x16gb-cl16'
+  },
+
+  {
+    name: 'Apple Macbook Air M4',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1087/10872312/1984-apple-macbook-air-apple-m4-10-nucleos-16-gb-256gb-ssd-gpu-8-nucleos-136-medianoche.jpg',
+    price: '1.039€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Computer',
+    link: 'https://www.pccomponentes.com/portatil-apple-macbook-air-m4-10-nucleos-16-gb-256gb-ssd-gpu-8-nucleos-136-medianoche'
+  },
+
+  {
+    name: 'HP 15-fd0080ns Intel Core i5-1334U',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1082/10828801/1405-hp-15-fd0080ns-intel-core-i5-1334u-16gb-512gb-ssd-156.jpg',
+    price: '529€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Computer',
+    link: 'https://www.pccomponentes.com/portatil-hp-15-fd0080ns-intel-core-i5-1334u-16gb-512gb-ssd-156-win-11'
+  },
+
+  {
+    name: 'Medion ERAZER Recon P10 MD34950',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10856855/1567-medion-erazer-recon-p10-md34950-intel-core-i5-14400f-16gb-512gb-ssd-rtx-4060.jpg',
+    price: '849€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Computer',
+    link: 'https://www.pccomponentes.com/ordenador-sobremesa-medion-erazer-recon-p10-md34950-intel-core-i5-14400f-16gb-512gb-ssd-rtx-4060'
+  },
+
+  {
+    name: 'PcCom Ready V2 AMD Ryzen 7 5800X',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1087/10879988/1751-pccom-ready-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-5060-ti-16gb-v2-windows-11-home-comprar.jpg',
+    price: '1.269€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Computer',
+    link: 'https://www.pccomponentes.com/ordenador-sobremesa-pccom-ready-v2-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-5060-ti-16gb-windows-11-home'
+  },
+
+  {
+    name: 'Nintendo Switch OLED',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/43/432883/1588-nintendo-switch-oled-azul-neon-rojo-neon-opiniones.jpg',
+    price: '324€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Games',
+    link: 'https://www.pccomponentes.com/nintendo-switch-oled-azul-neon-rojo-neon'
+  },
+
+  {
+    name: 'Microsoft Xbox Series X 1TB',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/32/323078/1684-microsoft-xbox-series-x-1tb.jpg',
+    price: '444,90€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Games',
+    link: 'https://www.pccomponentes.com/microsoft-xbox-series-x-1tb-negra?refurbished'
+  },
+
+  {
+    name: 'AstroBot PS5',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1083/10839235/1129-astrobot-ps5.jpg',
+    price: '54,99€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Games',
+    link: 'https://www.pccomponentes.com/astrobot-ps5'
+  },
+
+  {
+    name: 'Just Dance 2021 Xbox One/Series',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/33/334432/1386-just-dance-2021-xbox-one-series.jpg',
+    price: '42,64€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Games',
+    link: 'https://www.pccomponentes.com/just-dance-2021-xbox-one-series'
+  },
+
+  {
+    name: 'Apple iPhone 16 Pro Max 256GB Titanio Blanco',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855068/1301-apple-iphone-16-pro-max-256gb-titanio-blanco-libre.jpg',
+    price: '1.309€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'SmartPhones',
+    link: 'https://www.pccomponentes.com/movil-apple-iphone-16-pro-max-256gb-titanio-blanco-libre'
+  },
+
+  {
+    name: 'Samsung Galaxy S25 Ultra 512GB Titanio Negro',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1086/10866751/1707-samsung-galaxy-s25-ultra-smartphone-con-ia-almacenamiento-512gb-bateria-5000mah-titanio-negro-comprar.jpg',
+    price: '1.329€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'SmartPhones',
+    link: 'https://www.pccomponentes.com/movil-samsung-galaxy-s25-ultra-smartphone-con-ia-almacenamiento-512gb-bateria-5000mah-titanio-negro'
+  },
+
+  {
+    name: 'Samsung Galaxy S24 256GB Violeta Cobalt',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1081/10818341/1726-samsung-galaxy-s24-8-256gb-violeta-cobalt-libre.jpg',
+    price: '649€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'SmartPhones',
+    link: 'https://www.pccomponentes.com/movil-samsung-galaxy-s24-8-256gb-color-violeta-cobalt-libre'
+  },
+
+  {
+    name: 'Apple iPhone 16 Pro 128GB Titanio Negro',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855051/1647-apple-iphone-16-pro-128gb-titanio-negro-libre.jpg',
+    price: '1.079€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'SmartPhones',
+    link: 'https://www.pccomponentes.com/movil-apple-iphone-16-pro-128gb-titanio-negro-libre'
+  },
+
+  {
+    name: 'Apple iPhone 16 128GB Azul Ultramar',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855024/1115-apple-iphone-16-128gb-azul-ultramar-caracteristicas.jpg',
+    price: '815€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'SmartPhones',
+    link: 'https://www.pccomponentes.com/movil-apple-iphone-16-128gb-azul-ultramar'
+  },
+
+  {
+    name: 'Intel Core Ultra 7 265KF 3.3/5.5GHz Box',
+    img: 'https://thumb.pccomponentes.com/w-150-150/articles/1086/10860622/1276-intel-core-ultra-7-265kf-33-55ghz-box.jpg',
+    price: '319,99€',
+    seller: 'PcComponentes',
+    shipping: 'Free Shipping',
+    type: 'Components',
+    link: 'https://www.pccomponentes.com/procesador-intel-core-ultra-7-265kf-33-55ghz-box'
+  }
+]
+
+const store = document.getElementById('store')
+
+for (let i = 0; i < 21; i++) {
+  const div = document.createElement('a')
+  div.classList.add('divContainer')
+
+  const image = document.createElement('img')
+  image.src = articles[i].img
+
+  const name = document.createElement('h4')
+  name.textContent = articles[i].name
+
+  const price = document.createElement('h5')
+  price.textContent = articles[i].price
+
+  const seller = document.createElement('h6')
+  seller.textContent = 'Vendido por: ' + articles[i].seller
+
+  const ship = document.createElement('span')
+  ship.textContent = articles[i].shipping
+
+  const type = articles[i].type
+  div.classList.add(type)
+
+  div.href = articles[i].link
+
+  // Añadir la imagen al contenedor
+  div.appendChild(image)
+  div.appendChild(name)
+  div.appendChild(price)
+  div.appendChild(seller)
+  div.appendChild(ship)
+
+  // Añadir el contenedor al body
+  store.appendChild(div)
+}
+
+const btnPc = document.querySelector('#pc')
+btnPc.addEventListener('click', function () {
+  let array = document.querySelectorAll('.divContainer')
+  array.forEach((array) => {
+    if (!array.classList.contains('Computer')) {
+      array.classList.add('noshow')
+    } else {
+      array.classList.remove('noshow')
+    }
+  })
+})
+
+const btnAll = document.querySelector('#all')
+btnAll.addEventListener('click', function () {
+  let array = document.querySelectorAll('.divContainer')
+  array.forEach((array) => {
+    if (array.classList.contains('noshow')) {
+      array.classList.remove('noshow')
+    }
+  })
+})
+
+const btnComponents = document.querySelector('#components')
+btnComponents.addEventListener('click', function () {
+  let array = document.querySelectorAll('.divContainer')
+  array.forEach((array) => {
+    if (!array.classList.contains('Components')) {
+      array.classList.add('noshow')
+    } else {
+      array.classList.remove('noshow')
+    }
+  })
+})
+
+const btnGames = document.querySelector('#games')
+btnGames.addEventListener('click', function () {
+  let array = document.querySelectorAll('.divContainer')
+  array.forEach((array) => {
+    if (!array.classList.contains('Games')) {
+      array.classList.add('noshow')
+    } else {
+      array.classList.remove('noshow')
+    }
+  })
+})
+
+const btnSmartPhones = document.querySelector('#smartphones')
+btnSmartPhones.addEventListener('click', function () {
+  let array = document.querySelectorAll('.divContainer')
+  array.forEach((array) => {
+    if (!array.classList.contains('SmartPhones')) {
+      array.classList.add('noshow')
+    } else {
+      array.classList.remove('noshow')
+    }
+  })
+})
