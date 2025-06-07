@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans';
 }
 
 :root {
@@ -471,34 +471,53 @@ form {
     padding: 0.8rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.8rem;
   }
 
-  .divContainer span {
+  .ship {
     align-self: flex-end;
     margin-top: auto;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(17, 128, 0);
+  }
+
+  .review {
+    align-self: flex-start;
+    display: flex;
+  }
+  .review span:last-child {
     font-size: 0.8rem;
-    font-style: italic;
-    font-weight: 600;
-    color: rgb(77, 192, 0);
+  }
+
+  .review span:first-of-type {
+    margin-top: 0.09rem;
+    font-size: 0.8rem;
+    color: #333333;
+    font-weight: 700;
   }
 
   .divContainer h5 {
-    font-size: 0.9rem;
-    font-style: bold;
-    color: red;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(191, 0, 25);
   }
 
   .divContainer h6 {
     font-size: 0.7rem;
-    font-style: bold;
-    color: rgb(139, 139, 139);
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
   }
 
   .divContainer h4 {
     min-height: 38px;
-    font-size: 1rem;
-    font-style: bold;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #333333;
   }
 
   #filters {
@@ -521,5 +540,37 @@ form {
 
   .noshow {
     display: none;
+  }
+
+  #services {
+    display: flex;
+    gap: 2rem;
+    max-width: 1624px;
+    margin: auto;
+    overflow-x: scroll;
+    margin-bottom: 3rem;
+  }
+
+  #services > div {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services > div > span {
+    width: 250px;
+    text-align: center;
+  }
+
+  #notices {
+    display: flex;
+    gap: 2rem;
+    width: 1624px;
+    margin: auto;
+  }
+
+  #notices > a > img {
+    border-radius: 20px;
   }
 }

@@ -492,7 +492,8 @@ let articles = [
     img: 'https://img.pccomponentes.com/articles/1063/10639213/1359-lenovo-ideapad-3-15iau7-intel-core-i5-1235u-16gb-512gb-ssd-156.jpg',
     price: '668,84€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.5,
     type: 'Computer',
     link: 'https://www.pccomponentes.com/portatil-lenovo-ideapad-3-15alc6-amd-ryzen-5-5500u-16gb-512-gb-ssd-156'
   },
@@ -502,7 +503,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-530-530/articles/38/383415/1173-msi-amd-radeon-rx-6700-xt-mech-2x-12gb-oc-12gb-gddr6.jpg',
     price: '655,60€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4,
     type: 'Components',
     link: 'https://www.pccomponentes.com/msi-amd-radeon-rx-6700-xt-mech-2x-12gb-oc-12gb-gddr6?refurbished'
   },
@@ -512,7 +514,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1080/10801090/157-sony-playstation-5-digital-slim.jpg',
     price: '399€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.8,
     type: 'Games',
     link: 'https://www.pccomponentes.com/sony-playstation-5-digital-slim'
   },
@@ -522,7 +525,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/30/300749/1475-gigabyte-b550m-aorus-elite.jpg',
     price: '104,04€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.2,
     type: 'Components',
     link: 'https://www.pccomponentes.com/gigabyte-b550m-aorus-elite'
   },
@@ -532,7 +536,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1084/10845779/1544-amd-ryzen-9-9950x-43-57ghz.jpg',
     price: '595,99€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 5,
     type: 'Components',
     link: 'https://www.pccomponentes.com/procesador-amd-ryzen-9-9950x-43-57ghz'
   },
@@ -542,7 +547,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1006/10060346/1242-wd-black-sn770-1tb-nvme-ssd.jpg',
     price: '67,99€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 3.8,
     type: 'Components',
     link: 'https://www.pccomponentes.com/disco-duro-wd-black-sn770-1tb-disco-ssd-5150mb-s-nvme-pcie-40-m2-gen4-16gt-s'
   },
@@ -552,7 +558,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/35/351295/1838-corsair-vengeance-rgb-pro-ddr4-3200-pc4-25600-32gb-2x16gb-cl16.jpg',
     price: '129,98€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4,
     type: 'Components',
     link: 'https://www.pccomponentes.com/corsair-vengeance-rgb-pro-ddr4-3200-pc4-25600-32gb-2x16gb-cl16'
   },
@@ -562,7 +569,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1087/10872312/1984-apple-macbook-air-apple-m4-10-nucleos-16-gb-256gb-ssd-gpu-8-nucleos-136-medianoche.jpg',
     price: '1.039€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.8,
     type: 'Computer',
     link: 'https://www.pccomponentes.com/portatil-apple-macbook-air-m4-10-nucleos-16-gb-256gb-ssd-gpu-8-nucleos-136-medianoche'
   },
@@ -572,7 +580,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1082/10828801/1405-hp-15-fd0080ns-intel-core-i5-1334u-16gb-512gb-ssd-156.jpg',
     price: '529€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 3,
     type: 'Computer',
     link: 'https://www.pccomponentes.com/portatil-hp-15-fd0080ns-intel-core-i5-1334u-16gb-512gb-ssd-156-win-11'
   },
@@ -582,7 +591,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10856855/1567-medion-erazer-recon-p10-md34950-intel-core-i5-14400f-16gb-512gb-ssd-rtx-4060.jpg',
     price: '849€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.6,
     type: 'Computer',
     link: 'https://www.pccomponentes.com/ordenador-sobremesa-medion-erazer-recon-p10-md34950-intel-core-i5-14400f-16gb-512gb-ssd-rtx-4060'
   },
@@ -592,7 +602,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1087/10879988/1751-pccom-ready-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-5060-ti-16gb-v2-windows-11-home-comprar.jpg',
     price: '1.269€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4,
     type: 'Computer',
     link: 'https://www.pccomponentes.com/ordenador-sobremesa-pccom-ready-v2-amd-ryzen-7-5800x-32gb-1tb-ssd-rtx-5060-ti-16gb-windows-11-home'
   },
@@ -602,7 +613,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/43/432883/1588-nintendo-switch-oled-azul-neon-rojo-neon-opiniones.jpg',
     price: '324€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.8,
     type: 'Games',
     link: 'https://www.pccomponentes.com/nintendo-switch-oled-azul-neon-rojo-neon'
   },
@@ -612,7 +624,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/32/323078/1684-microsoft-xbox-series-x-1tb.jpg',
     price: '444,90€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.3,
     type: 'Games',
     link: 'https://www.pccomponentes.com/microsoft-xbox-series-x-1tb-negra?refurbished'
   },
@@ -622,7 +635,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1083/10839235/1129-astrobot-ps5.jpg',
     price: '54,99€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.5,
     type: 'Games',
     link: 'https://www.pccomponentes.com/astrobot-ps5'
   },
@@ -632,7 +646,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/33/334432/1386-just-dance-2021-xbox-one-series.jpg',
     price: '42,64€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 3.3,
     type: 'Games',
     link: 'https://www.pccomponentes.com/just-dance-2021-xbox-one-series'
   },
@@ -642,17 +657,19 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855068/1301-apple-iphone-16-pro-max-256gb-titanio-blanco-libre.jpg',
     price: '1.309€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 5,
     type: 'SmartPhones',
     link: 'https://www.pccomponentes.com/movil-apple-iphone-16-pro-max-256gb-titanio-blanco-libre'
   },
 
   {
-    name: 'Samsung Galaxy S25 Ultra 512GB Titanio Negro',
+    name: 'Samsung Galaxy S25 Ultra 512GB Negro',
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1086/10866751/1707-samsung-galaxy-s25-ultra-smartphone-con-ia-almacenamiento-512gb-bateria-5000mah-titanio-negro-comprar.jpg',
     price: '1.329€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.5,
     type: 'SmartPhones',
     link: 'https://www.pccomponentes.com/movil-samsung-galaxy-s25-ultra-smartphone-con-ia-almacenamiento-512gb-bateria-5000mah-titanio-negro'
   },
@@ -662,7 +679,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1081/10818341/1726-samsung-galaxy-s24-8-256gb-violeta-cobalt-libre.jpg',
     price: '649€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.1,
     type: 'SmartPhones',
     link: 'https://www.pccomponentes.com/movil-samsung-galaxy-s24-8-256gb-color-violeta-cobalt-libre'
   },
@@ -672,7 +690,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855051/1647-apple-iphone-16-pro-128gb-titanio-negro-libre.jpg',
     price: '1.079€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.7,
     type: 'SmartPhones',
     link: 'https://www.pccomponentes.com/movil-apple-iphone-16-pro-128gb-titanio-negro-libre'
   },
@@ -682,7 +701,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855024/1115-apple-iphone-16-128gb-azul-ultramar-caracteristicas.jpg',
     price: '815€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4,
     type: 'SmartPhones',
     link: 'https://www.pccomponentes.com/movil-apple-iphone-16-128gb-azul-ultramar'
   },
@@ -692,7 +712,8 @@ let articles = [
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1086/10860622/1276-intel-core-ultra-7-265kf-33-55ghz-box.jpg',
     price: '319,99€',
     seller: 'PcComponentes',
-    shipping: 'Free Shipping',
+    shipping: 'Envío gratis',
+    review: 4.4,
     type: 'Components',
     link: 'https://www.pccomponentes.com/procesador-intel-core-ultra-7-265kf-33-55ghz-box'
   }
@@ -713,10 +734,20 @@ for (let i = 0; i < 21; i++) {
   const price = document.createElement('h5')
   price.textContent = articles[i].price
 
+  const rating = document.createElement('div')
+  rating.classList.add('review')
+  const span1 = document.createElement('span')
+  span1.textContent = articles[i].review + '/5'
+  const span2 = document.createElement('span')
+  span2.textContent = '⭐'
+  rating.appendChild(span1)
+  rating.appendChild(span2)
+
   const seller = document.createElement('h6')
   seller.textContent = 'Vendido por: ' + articles[i].seller
 
   const ship = document.createElement('span')
+  ship.classList.add('ship')
   ship.textContent = articles[i].shipping
 
   const type = articles[i].type
@@ -724,14 +755,13 @@ for (let i = 0; i < 21; i++) {
 
   div.href = articles[i].link
 
-  // Añadir la imagen al contenedor
   div.appendChild(image)
   div.appendChild(name)
   div.appendChild(price)
+  div.appendChild(rating)
   div.appendChild(seller)
   div.appendChild(ship)
 
-  // Añadir el contenedor al body
   store.appendChild(div)
 }
 
