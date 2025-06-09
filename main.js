@@ -143,7 +143,7 @@ function displayMenu() {
                   class="menu-container"
                   id="configurador-trending"
                   >Configurador PCs<span class="trending"
-                    >Te recomandamos</span
+                    >Trending</span
                   ></a
                 >
               </li>
@@ -653,7 +653,7 @@ let articles = [
   },
 
   {
-    name: 'Apple iPhone 16 Pro Max 256GB Titanio Blanco',
+    name: 'Apple iPhone 16 Pro Max 256GB Blanco',
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855068/1301-apple-iphone-16-pro-max-256gb-titanio-blanco-libre.jpg',
     price: '1.309€',
     seller: 'PcComponentes',
@@ -675,7 +675,7 @@ let articles = [
   },
 
   {
-    name: 'Samsung Galaxy S24 256GB Violeta Cobalt',
+    name: 'Samsung Galaxy S24 256GB Violeta',
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1081/10818341/1726-samsung-galaxy-s24-8-256gb-violeta-cobalt-libre.jpg',
     price: '649€',
     seller: 'PcComponentes',
@@ -686,7 +686,7 @@ let articles = [
   },
 
   {
-    name: 'Apple iPhone 16 Pro 128GB Titanio Negro',
+    name: 'Apple iPhone 16 Pro 128GB Negro',
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855051/1647-apple-iphone-16-pro-128gb-titanio-negro-libre.jpg',
     price: '1.079€',
     seller: 'PcComponentes',
@@ -697,7 +697,7 @@ let articles = [
   },
 
   {
-    name: 'Apple iPhone 16 128GB Azul Ultramar',
+    name: 'Apple iPhone 16 128GB Azul',
     img: 'https://thumb.pccomponentes.com/w-150-150/articles/1085/10855024/1115-apple-iphone-16-128gb-azul-ultramar-caracteristicas.jpg',
     price: '815€',
     seller: 'PcComponentes',
@@ -719,9 +719,9 @@ let articles = [
   }
 ]
 
-const store = document.getElementById('store')
+const store = document.getElementById('cards')
 
-for (let i = 0; i < 21; i++) {
+for (let i = 0; i < articles.length; i++) {
   const div = document.createElement('a')
   div.classList.add('divContainer')
 

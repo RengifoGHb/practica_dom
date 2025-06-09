@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PcComponentes | Tienda de Informática y Tecnología online</title>
     <link
-      rel="shortcut icon"
+      rel="icon"
       type="image/png"
       href="https://cdn.pccomponentes.com/img/favicons/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
       <div id="header-container">
-        <a href="https://www.pccomponentes.com/" target="_blank">
+        <a
+          href="https://www.pccomponentes.com/"
+          target="_blank"
+          aria-label="Ir a PcComponentes">
           <div>
             <img
               id="logo-img"
               src="https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg"
               width="138"
               height="48"
-              alt="PcComponentes" />
+              alt="PcComponentes Logo" />
           </div>
           <div>
             <img
               id="logo-img-mobile"
               class="header-icon"
               src="https://cdn.pccomponentes.com/img/favicons/favicon.png"
-              alt="PcComponentes Mobile" />
+              alt="PcComponentes Icono Móvil" />
           </div>
         </a>
-        <button id="button-menu" class="header-option" onclick="displayMenu()">
+        <button
+          id="button-menu"
+          class="header-option"
+          onclick="displayMenu()"
+          aria-label="Abrir menú de categorías">
           <img
             class="header-icon"
             src="https://images.icon-icons.com/916/PNG/512/Menu_icon_2_icon-icons.com_71856.png"
-            alt="Menu" />
+            alt="Icono Menú" />
           <span class="header-span">Todas las categorías</span>
         </button>
         <div class="menu"></div>
         <div id="search-container">
-          <form action="#">
+          <form action="#" role="search">
             <input
               id="search"
               aria-label="Buscar"
               placeholder="Buscar"
               value="" />
-            <button id="search-button">
+            <button id="search-button" type="submit" aria-label="Buscar">
               <img
                 src="https://images.icon-icons.com/1990/PNG/512/glassmagnifiermagnifyingsearchsearchingweb_123111.png"
                 alt="Buscar" />
@@ -59,14 +68,15 @@
         <a
           class="header-option"
           href="https://www.pccomponentes.com/login"
-          target="_blank">
+          target="_blank"
+          aria-label="Mi cuenta">
           <img
             id="login-img"
             src="https://images.icon-icons.com/1993/PNG/512/account_avatar_face_man_people_profile_user_icon_123197.png"
             alt="Mi cuenta" />
           <span class="header-span">Mi cuenta</span>
         </a>
-        <button class="header-option">
+        <button class="header-option" aria-label="Ver cesta">
           <img
             id="cart-img"
             src="https://images.icon-icons.com/2249/PNG/512/cart_outline_icon_139049.png"
@@ -76,14 +86,17 @@
       </div>
       <div id="header-container-2">
         <p>
-          <strong>Expertos en tecnología</strong
-          ><span> con un servicio 5 estrellas</span>
+          <strong>Expertos en tecnología</strong>
+          <span> con un servicio 5 estrellas</span>
         </p>
       </div>
     </header>
     <main>
-      <div id="banner">
-        <a href="https://www.pccomponentes.com/ofertas-express" target="_blank">
+      <section id="banner">
+        <a
+          href="https://www.pccomponentes.com/ofertas-express"
+          target="_blank"
+          aria-label="Ir a Ofertas Express">
           <picture>
             <source
               srcset="
@@ -94,260 +107,636 @@
               srcset="
                 https://img.pccomponentes.com/pcblog/1744322400000/820x460-w16-ofertas-top.png
               "
-              alt="Ofertas Express"
+              alt="Banner de Ofertas Express"
               title="Ofertas Express" />
           </picture>
         </a>
-      </div>
+      </section>
       <section id="deals">
         <article>
-          <a href="https://www.pccomponentes.com/portatiles">
+          <a
+            href="https://www.pccomponentes.com/portatiles"
+            aria-label="Ver portátiles en oferta">
             <img
               class="option-card"
               src="https://img.pccomponentes.com/pcblog/1735858800000/500x500-portatiles-1-v2.png"
-              alt="Portátiles" />
+              alt="Portátiles en oferta" />
           </a>
         </article>
         <article>
-          <a href="https://www.pccomponentes.com/componentes">
+          <a
+            href="https://www.pccomponentes.com/componentes"
+            aria-label="Ver componentes de PC en oferta">
             <img
               class="option-card"
               src="https://img.pccomponentes.com/pcblog/1735858800000/500x500-componentes-v2.png"
-              alt="Ofertas en componentes de PC" />
+              alt="Componentes de PC en oferta" />
           </a>
         </article>
         <article>
-          <a href="https://www.pccomponentes.com/monitores-pc">
+          <a
+            href="https://www.pccomponentes.com/monitores-pc"
+            aria-label="Ver monitores en oferta">
             <img
               class="option-card"
               src="https://img.pccomponentes.com/pcblog/1735858800000/500x500-monitores-v2.png"
-              alt="Ofertas en monitores" />
+              alt="Monitores en oferta" />
           </a>
         </article>
         <article>
-          <a href="https://www.pccomponentes.com/televisores">
+          <a
+            href="https://www.pccomponentes.com/televisores"
+            aria-label="Ver televisores y audio en oferta">
             <img
               class="option-card"
               src="https://img.pccomponentes.com/pcblog/1735858800000/tv-500x500-v2.png"
-              alt="Novedades en TV y audio" />
+              alt="TV y audio en oferta" />
           </a>
         </article>
         <article>
-          <a href="https://www.pccomponentes.com/smartphone-moviles">
+          <a
+            href="https://www.pccomponentes.com/smartphone-moviles"
+            aria-label="Ver smartphones en oferta">
             <img
               class="option-card"
               src="https://img.pccomponentes.com/pcblog/1737586800000/500x500-smartphones.png"
-              alt="Ofertas en smartphones" />
+              alt="Smartphones en oferta" />
           </a>
         </article>
         <article>
-          <a href="https://www.pccomponentes.com/electro-hogar">
+          <a
+            href="https://www.pccomponentes.com/electro-hogar"
+            aria-label="Ver productos del hogar en oferta">
             <img
               class="option-card"
               src="https://img.pccomponentes.com/pcblog/1736463600000/500x500-hogar-ofertas.png"
-              alt="Ofertas en hogar" />
+              alt="Electrodomésticos y hogar en oferta" />
           </a>
         </article>
       </section>
-      <section id="market-container">
-        <div id="market">
-          <div id="filters">
-            <button id="all">Ver todo</button>
-            <button id="pc">Pc</button>
-            <button id="components">Componentes</button>
-            <button id="games">Juegos</button>
-            <button id="smartphones">Móviles</button>
-          </div>
-          <div id="store"></div>
-        </div>
+      <section id="market">
+        <article id="store" aria-label="Catálogo de productos">
+          <nav id="filters" aria-label="Filtros de productos">
+            <button id="all" type="button">Ver todo</button>
+            <button id="pc" type="button">PC</button>
+            <button id="components" type="button">Componentes</button>
+            <button id="games" type="button">Juegos</button>
+            <button id="smartphones" type="button">Móviles</button>
+          </nav>
+          <div id="cards" aria-label="Resultados del catálogo filtrado"></div>
+        </article>
       </section>
       <section id="services">
-        <a href="https://www.pccomponentes.com/ofertas-especiales">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1738537200000/ofertas-especiales.png"
-            alt="Ofertas especiales" />
-          <span>Ofertas especiales</span>
-        </a>
-        <a
-          href="https://help.pccomponentes.com/hc/es-es/articles/19504957135517-promocic3b3n-de">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1735858800000/benef-envio-gratis-v2.png"
-            alt="Envíos gratuitos" />
-          <span>Envíos gratuitos en pedidos superiores a 50€</span>
-        </a>
-        <a
-          href="https://help.pccomponentes.com/hc/es-es/articles/19504278450461-plazos-de-entrega">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1735858800000/benef-dev-24h-v2.png"
-            alt="Recibe en 24h" />
-          <span>Recibe tu pedido en 24h</span>
-        </a>
-        <a
-          href="https://help.pccomponentes.com/hc/es-es/articles/21624280186397-devolver-un-producto">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1735858800000/benef-dev-24h-1-v2.png"
-            alt="Devoluciones gratis" />
-          <span>Devoluciones gratuitas</span>
-        </a>
-        <a
-          href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-garantias-y-devoluciones">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1735858800000/benef-gar-solucion-v2.png"
-            alt="Garantía" />
-          <span>Garantía de solución en 24h</span>
-        </a>
-        <a href="https://www.pccomponentes.com/novedades">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1736722800000/lanzamientos-y-novedades.png"
-            alt="Novedades" />
-          <span>Lanzamientos y novedades</span>
-        </a>
-        <a href="https://www.pccomponentes.com/pccom">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1735858800000/frame-2-v2.png"
-            alt="Ordenadores PcCom" />
-          <span>Ordenadores PcCom</span>
-        </a>
-        <a href="https://www.pccomponentes.com/servicios">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1735858800000/frame-5-v2.png"
-            alt="Servicios" />
-          <span>Servicios</span>
-        </a>
+        <ul>
+          <li>
+            <a href="https://www.pccomponentes.com/ofertas-especiales">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1738537200000/ofertas-especiales.png"
+                alt="Ofertas especiales" />
+              <span>Ofertas especiales</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://help.pccomponentes.com/hc/es-es/articles/19504957135517-promocic3b3n-de">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1735858800000/benef-envio-gratis-v2.png"
+                alt="Envíos gratuitos" />
+              <span>Envíos gratuitos en pedidos superiores a 50€</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://help.pccomponentes.com/hc/es-es/articles/19504278450461-plazos-de-entrega">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1735858800000/benef-dev-24h-v2.png"
+                alt="Recibe en 24h" />
+              <span>Recibe tu pedido en 24h</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://help.pccomponentes.com/hc/es-es/articles/21624280186397-devolver-un-producto">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1735858800000/benef-dev-24h-1-v2.png"
+                alt="Devoluciones gratuitas" />
+              <span>Devoluciones gratuitas</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-garantias-y-devoluciones">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1735858800000/benef-gar-solucion-v2.png"
+                alt="Garantía de solución en 24h" />
+              <span>Garantía de solución en 24h</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pccomponentes.com/novedades">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1736722800000/lanzamientos-y-novedades.png"
+                alt="Lanzamientos y novedades" />
+              <span>Lanzamientos y novedades</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pccomponentes.com/pccom">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1735858800000/frame-2-v2.png"
+                alt="Ordenadores PcCom" />
+              <span>Ordenadores PcCom</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pccomponentes.com/servicios">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1735858800000/frame-5-v2.png"
+                alt="Servicios" />
+              <span>Servicios</span>
+            </a>
+          </li>
+        </ul>
       </section>
       <section id="notices">
-        <a href="https://www.pccomponentes.com/days-of-play-2025">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1748815200000/500x320-dop.jpg"
-            alt="" />
-        </a>
-        <a href="https://www.pccomponentes.com/regalos-para-ninos">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1748469600000/500x320-comunio-n-v2-195.png"
-            alt="" />
-        </a>
-        <a
-          href="https://www.pccomponentes.com/tarjetas-graficas/geforce-rtx-5060/geforce-rtx-5060-ti/geforce-rtx-5070/geforce-rtx-5070-ti/geforce-rtx-5080/geforce-rtx-5090">
-          <img
-            src="https://img.pccomponentes.com/pcblog/1748469600000/500x320-nvidia-serie-5071-195.png"
-            alt="" />
-        </a>
+        <ul>
+          <li>
+            <a href="https://www.pccomponentes.com/days-of-play-2025">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1748815200000/500x320-dop.jpg"
+                alt="Days of Play 2025 - Promoción especial" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.pccomponentes.com/regalos-para-ninos">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1748469600000/500x320-comunio-n-v2-195.png"
+                alt="Regalos para niños en PcComponentes" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.pccomponentes.com/tarjetas-graficas/geforce-rtx-5060/geforce-rtx-5060-ti/geforce-rtx-5070/geforce-rtx-5070-ti/geforce-rtx-5080/geforce-rtx-5090">
+              <img
+                src="https://img.pccomponentes.com/pcblog/1748469600000/500x320-nvidia-serie-5071-195.png"
+                alt="Tarjetas gráficas Nvidia GeForce RTX serie 50" />
+            </a>
+          </li>
+        </ul>
       </section>
+      <div class="overlay" onclick="displayMenu()"></div>
     </main>
-    <div class="overlay" onclick="displayMenu()"></div>
     <footer>
       <section id="about-us">
         <h2>PcComponentes es tu tienda online de tecnología e informática</h2>
         <p>
-          Somos la 
-          <strong>tienda online líder en tecnología</strong>
-          , basada en la confianza, la experiencia de compra y el conocimiento del sector tecnológico. Desde 2005 somos 
-          <strong>expertos</strong>
-           en informática y electrónica. Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad más tecnológica siendo el cliente nuestra razón de ser, superando siempre sus expectativas. <br> 
-           Actualmente contamos con más de 100.000 artículos disponibles y 31.700 m2 repartidos entre todas nuestras instalaciones, además de cuatro <a title="tiendas físicas de PcComponentes" href="https://www.pccomponentes.com/tiendas">tiendas físicas</a> en
-          <strong>Madrid, Barcelona, Murcia</strong> y
+          Somos la <strong>tienda online líder en tecnología</strong>, basada en
+          la confianza, la experiencia de compra y el conocimiento del sector
+          tecnológico. Desde 2005 somos <strong>expertos</strong> en informática
+          y electrónica. Buscamos innovar, descubrir y responder día a día a las
+          últimas necesidades de la comunidad más tecnológica siendo el cliente
+          nuestra razón de ser, superando siempre sus expectativas. <br />
+
+          Actualmente contamos con más de 100.000 artículos disponibles y 31.700
+          m<sup>2</sup>
+          repartidos entre todas nuestras instalaciones, además de cuatro
+          <a
+            title="tiendas físicas de PcComponentes"
+            href="https://www.pccomponentes.com/tiendas"
+            >tiendas físicas</a
+          >
+          en <strong>Madrid, Barcelona, Murcia</strong> y
           <strong>Alhama de Murcia.</strong>
         </p>
         <h3>Los expertos en tecnología más comprometidos contigo</h3>
         <p>
-          Nuestros <a title="compromisos con nuestro cliente" href="https://www.pccomponentes.com/compromisos">compromisos</a>  se centran en ser expertos en lo que vendemos y garantizar al cliente todo lo que necesita:
-          <ul>
-            <li><strong>Envíos gratuitos</strong> a partir de 50€ siempre en <strong>24 horas*</strong> (si excepcionalmente incumplimos la fecha de entrega, te devolvemos los gastos de envío).</li>
-            <li><strong>Garantía</strong> con la mejor solución para ti en <strong>24h.</strong></li>
-            <li><strong>Devoluciones gratuitas.</strong></li>
-            <li><strong>Atención al cliente local y sin esperas.</strong></li>
-            <li>Nos tomamos muy en serio las <strong>opiniones</strong> de nuestros clientes, y puedes verlas siempre en nuestros artículos</li>
-          </ul>
-          Bienvenido a PcComponentes.
-          <br>
-          <br>
+          Nuestros
+          <a
+            title="compromisos con nuestro cliente"
+            href="https://www.pccomponentes.com/compromisos"
+            >compromisos</a
+          >
+          se centran en ser expertos en lo que vendemos y garantizar al cliente
+          todo lo que necesita:
         </p>
+        <ul>
+          <li>
+            <strong>Envíos gratuitos</strong> a partir de 50€ siempre en
+            <strong>24 horas*</strong> (si excepcionalmente incumplimos la fecha
+            de entrega, te devolvemos los gastos de envío).
+          </li>
+          <li>
+            <strong>Garantía</strong> con la mejor solución para ti en
+            <strong>24h.</strong>
+          </li>
+          <li><strong>Devoluciones gratuitas.</strong></li>
+          <li><strong>Atención al cliente local y sin esperas.</strong></li>
+          <li>
+            Nos tomamos muy en serio las <strong>opiniones</strong> de nuestros
+            clientes, y puedes verlas siempre en nuestros artículos.
+          </li>
+        </ul>
+        <p>Bienvenido a PcComponentes.</p>
+        <br />
+        <br />
       </section>
       <section id="links">
-        <div class="list">
+        <article class="list">
           <span>Por qué comprar</span>
           <ul>
-            <li><a href="https://help.pccomponentes.com/hc/es-es/categories/19806130438813-C%C3%B3mo-comprar">Cómo comprar</a></li>
-            <li><a href="https://help.pccomponentes.com/hc/es-es/articles/19503812615197--C%C3%B3mo-puedo-pagar-en-PcComponentes">Formas de pago</a></li>
-            <li><a href="https://help.pccomponentes.com/hc/es-es/articles/19503927607709-Gastos-de-env%C3%ADo">Gastos de envío</a></li>
-            <li><a href="https://www.pccomponentes.com/cupones-descuento-y-codigos-promocionales">Cupones descuento</a></li>
-            <li><a href=https://help.pccomponentes.com/hc/es-es">Preguntas frecuentes</a></li>
-            <li><a href="https://www.pccomponentes.com/opiniones">Opiniones de clientes</a></li>
-            <li><a href="https://www.pccomponentes.com/tarjetas-regalo">Tarjetas regalo</a></li>
-            <li><a href="https://www.pccomponentes.com/servicios-para-empresas-y-autonomos">Servicios para empresas</a></li>
-            <li><a href="https://www.pccomponentes.com/empresas-y-profesionales">Compras para empresas</a></li>
+            <li>
+              <a
+                href="https://help.pccomponentes.com/hc/es-es/categories/19806130438813-C%C3%B3mo-comprar"
+                aria-label="Cómo comprar en PcComponentes"
+                >Cómo comprar</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.pccomponentes.com/hc/es-es/articles/19503812615197--C%C3%B3mo-puedo-pagar-en-PcComponentes"
+                aria-label="Formas de pago en PcComponentes"
+                >Formas de pago</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.pccomponentes.com/hc/es-es/articles/19503927607709-Gastos-de-env%C3%ADo"
+                aria-label="Gastos de envío en PcComponentes"
+                >Gastos de envío</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/cupones-descuento-y-codigos-promocionales"
+                aria-label="Cupones descuento para PcComponentes"
+                >Cupones descuento</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.pccomponentes.com/hc/es-es"
+                aria-label="Preguntas frecuentes en PcComponentes"
+                >Preguntas frecuentes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/opiniones"
+                aria-label="Opiniones de clientes de PcComponentes"
+                >Opiniones de clientes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/tarjetas-regalo"
+                aria-label="Tarjetas regalo de PcComponentes"
+                >Tarjetas regalo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/servicios-para-empresas-y-autonomos"
+                aria-label="Servicios para empresas y autónomos de PcComponentes"
+                >Servicios para empresas</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/empresas-y-profesionales"
+                aria-label="Compras para empresas en PcComponentes"
+                >Compras para empresas</a
+              >
+            </li>
           </ul>
-        </div>
-        <div class="list">
+        </article>
+        <article class="list">
           <span>Quiénes somos</span>
           <ul>
-            <li><a href="https://www.pccomponentes.com/quienes-somos">Quiénes somos</a></li>
-            <li><a href="https://www.pccomponentes.com/compromisos">Compromisos</a></li>
-            <li><a href="https://www.pccomponentes.com/tiendas">Nuestras tiendas</a></li>
-            <li><a href="https://www.pccomponentes.com/nuestras-marcas">Nuestras Marcas</a></li>
-            <li><a href="https://www.pccomponentes.com/condiciones-de-compra">Condiciones de compra</a></li>
-            <li><a href="https://www.pccomponentes.com/afiliados">Afiliados</a></li>
-            <li><a href="https://www.pccomponentes.com/aviso-legal">Aviso legal</a></li>
-            <li><a href="https://www.pccomponentes.com/privacidad">Privacidad</a></li>
-            <li><a href="https://www.pccomponentes.com/condiciones-generales-de-marketplace">Condiciones Generales Marketplace</a></li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/quienes-somos"
+                aria-label="Quiénes somos en PcComponentes"
+                >Quiénes somos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/compromisos"
+                aria-label="Compromisos de PcComponentes"
+                >Compromisos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/tiendas"
+                aria-label="Nuestras tiendas PcComponentes"
+                >Nuestras tiendas</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/nuestras-marcas"
+                aria-label="Nuestras marcas en PcComponentes"
+                >Nuestras Marcas</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/condiciones-de-compra"
+                aria-label="Condiciones de compra en PcComponentes"
+                >Condiciones de compra</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/afiliados"
+                aria-label="Programa de afiliados de PcComponentes"
+                >Afiliados</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/aviso-legal"
+                aria-label="Aviso legal de PcComponentes"
+                >Aviso legal</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/privacidad"
+                aria-label="Política de privacidad de PcComponentes"
+                >Privacidad</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/condiciones-generales-de-marketplace"
+                aria-label="Condiciones generales Marketplace de PcComponentes"
+                >Condiciones Generales Marketplace</a
+              >
+            </li>
           </ul>
-        </div>
-        <div class="list">
+        </article>
+        <article class="list">
           <span>Contactar</span>
           <ul>
-            <li><a href="https://help.pccomponentes.com/hc/es-es">Contacto y Ayuda</a></li>
-            <li><a href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-Garant%C3%ADas-y-devoluciones">Devoluciones y Garantías</a></li>
-            <li><a href="https://www.pccomponentes.com/wiki">Wiki PcComponentes</a></li>
-            <li><a href="https://www.pccomponentes.com/opina-y-gana">Opina y Gana</a></li>
-            <li><a href="https://pcads.pccomponentes.com/">Publicidad</a></li>
-            <li><a href="https://jobs.pccomponentes.com/">Trabaja con nosotros</a></li>
-            <li><a href="https://pccomponentes.canaletico.app/inicio">Canal ético</a></li>
-            <li><a href="https://www.pccomponentes.com/cookies">Política de cookies</a></li>
+            <li>
+              <a
+                href="https://help.pccomponentes.com/hc/es-es"
+                aria-label="Contacto y ayuda en PcComponentes"
+                >Contacto y Ayuda</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-Garant%C3%ADas-y-devoluciones"
+                aria-label="Devoluciones y garantías en PcComponentes"
+                >Devoluciones y Garantías</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/wiki"
+                aria-label="Wiki de PcComponentes"
+                >Wiki PcComponentes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/opina-y-gana"
+                aria-label="Opina y gana en PcComponentes"
+                >Opina y Gana</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://pcads.pccomponentes.com/"
+                aria-label="Publicidad en PcComponentes"
+                >Publicidad</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://jobs.pccomponentes.com/"
+                aria-label="Trabaja con nosotros en PcComponentes"
+                >Trabaja con nosotros</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://pccomponentes.canaletico.app/inicio"
+                aria-label="Canal ético de PcComponentes"
+                >Canal ético</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/cookies"
+                aria-label="Política de cookies de PcComponentes"
+                >Política de cookies</a
+              >
+            </li>
           </ul>
-        </div>
-        <div class="list">
+        </article>
+        <article class="list">
           <span>Otros</span>
           <ul>
-            <li><a href="https://www.pccomponentes.com/replay">Replay</a></li>
-            <li><a href="https://www.pccomponentes.com/black-friday">Black Friday</a></li>
-            <li><a href="https://www.pccomponentes.com/cyber-monday">Cyber Monday</a></li>
-            <li><a href="https://www.pccomponentes.com/pcdays">PcDays</a></li>
-            <li><a href="https://www.pccomponentes.com/marketplace">Marketplace</a></li>
-            <li><a href="https://fulfillment.pccomponentes.com/">Servicio logístico Fulfillment</a></li>
-            <li><a href="https://www.pccomponentes.com/servicio-de-reparaciones">Servicio de reparaciones</a></li>
-            <li><a href="https://www.pccomponentes.com/sorteos">Concursos</a></li>
-            <li><a href="https://www.pccomponentes.com/servicio-tecnico-remoto-asre">Cita asistencia técnica</a></li>
-            <li><a href="https://www.pccomponentes.com/programa-embajadores">Programa de embajadores</a></li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/replay"
+                aria-label="Replay en PcComponentes"
+                >Replay</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/black-friday"
+                aria-label="Black Friday en PcComponentes"
+                >Black Friday</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/cyber-monday"
+                aria-label="Cyber Monday en PcComponentes"
+                >Cyber Monday</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/pcdays"
+                aria-label="PcDays en PcComponentes"
+                >PcDays</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/marketplace"
+                aria-label="Marketplace de PcComponentes"
+                >Marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fulfillment.pccomponentes.com/"
+                aria-label="Servicio logístico Fulfillment de PcComponentes"
+                >Servicio logístico Fulfillment</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/servicio-de-reparaciones"
+                aria-label="Servicio de reparaciones de PcComponentes"
+                >Servicio de reparaciones</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/sorteos"
+                aria-label="Concursos en PcComponentes"
+                >Concursos</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/servicio-tecnico-remoto-asre"
+                aria-label="Cita asistencia técnica en PcComponentes"
+                >Cita asistencia técnica</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pccomponentes.com/programa-embajadores"
+                aria-label="Programa de embajadores de PcComponentes"
+                >Programa de embajadores</a
+              >
+            </li>
           </ul>
-        </div>
-        <div class="list">
+        </article>
+        <article class="list">
           <span>Comunidad</span>
           <ul>
-            <li><a class="comunity" href="https://www.pccomponentes.com/blog"><img src="https://cdn.pccomponentes.com/img/favicons/favicon.png" alt=""><span>Blog</span></a></li>
-            <li><a class="comunity" href="https://www.instagram.com/pccomponentes/"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt=""><span>Instagram</span></a></li>
-            <li><a class="comunity" href="https://twitter.com/pccomponentes"><img src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000" alt=""><span>Twitter</span></a></li>
-            <li><a class="comunity" href="https://www.facebook.com/pccomponentes"><img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt=""><span>Facebook</span></a></li>
-            <li><a class="comunity" href="https://t.me/pccomponentesESP"><img src="https://img.icons8.com/?size=100&id=lUktdBVdL4Kb&format=png&color=000000" alt=""><span>Telegram</span></a></li>
-            <li><a class="comunity" href="https://www.youtube.com/user/PcComponentescom"><img src="https://img.icons8.com/?size=100&id=37326&format=png&color=000000" alt=""><span>Youtube</span></a></li>
-            <li><a class="comunity" href="https://www.tiktok.com/@pccomponentes.com"><img src="https://img.icons8.com/?size=100&id=118638&format=png&color=000000" alt=""><span>TikTok</span></a></li>
-            <li><a class="comunity" href="https://www.twitch.tv/pccomponenteses"><img src="https://img.icons8.com/?size=100&id=18104&format=png&color=000000" alt=""><span>Twitch</span></a></li>
+            <li>
+              <a
+                class="comunity"
+                href="https://www.pccomponentes.com/blog"
+                aria-label="Blog de PcComponentes">
+                <img
+                  src="https://cdn.pccomponentes.com/img/favicons/favicon.png"
+                  alt="Icono favicon PcComponentes" />
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://www.instagram.com/pccomponentes/"
+                aria-label="Instagram de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"
+                  alt="Icono Instagram" />
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://twitter.com/pccomponentes"
+                aria-label="Twitter de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000"
+                  alt="Icono Twitter" />
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://www.facebook.com/pccomponentes"
+                aria-label="Facebook de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000"
+                  alt="Icono Facebook" />
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://t.me/pccomponentesESP"
+                aria-label="Telegram de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=lUktdBVdL4Kb&format=png&color=000000"
+                  alt="Icono Telegram" />
+                <span>Telegram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://www.youtube.com/user/PcComponentescom"
+                aria-label="YouTube de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=37326&format=png&color=000000"
+                  alt="Icono YouTube" />
+                <span>Youtube</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://www.tiktok.com/@pccomponentes.com"
+                aria-label="TikTok de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=118638&format=png&color=000000"
+                  alt="Icono TikTok" />
+                <span>TikTok</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="comunity"
+                href="https://www.twitch.tv/pccomponenteses"
+                aria-label="Twitch de PcComponentes">
+                <img
+                  src="https://img.icons8.com/?size=100&id=18104&format=png&color=000000"
+                  alt="Icono Twitch" />
+                <span>Twitch</span>
+              </a>
+            </li>
           </ul>
-        </div>
-        <div>
+        </article>
+        <article id="list-icons">
           <div class="icons-footer">
-            <img src="https://cdn.pccomponentes.com/img/footer/eAward19.png" alt="">
-            <img src="https://cdn.pccomponentes.com/img/footer/eCommerceAwards.png" alt="">
+            <img
+              src="https://cdn.pccomponentes.com/img/footer/eAward19.png"
+              alt="Premio eAward 2019" />
+            <img
+              src="https://cdn.pccomponentes.com/img/footer/eCommerceAwards.png"
+              alt="Premio eCommerce Awards" />
           </div>
           <div class="icons-footer">
-            <img src="https://img.icons8.com/?size=100&id=13641&format=png&color=000000" alt="">
-            <img src="https://img.icons8.com/?size=100&id=62765&format=png&color=000000" alt="">
-            <img src="https://img.icons8.com/?size=100&id=0xgLR53CoHMi&format=png&color=000000" alt="">
-            <img src="https://img.icons8.com/?size=100&id=13611&format=png&color=000000" alt="">
+            <img
+              src="https://img.icons8.com/?size=100&id=13641&format=png&color=000000"
+              alt="Icono de seguridad 1" />
+            <img
+              src="https://img.icons8.com/?size=100&id=62765&format=png&color=000000"
+              alt="Icono de seguridad 2" />
+            <img
+              src="https://img.icons8.com/?size=100&id=0xgLR53CoHMi&format=png&color=000000"
+              alt="Icono de seguridad 3" />
+            <img
+              src="https://img.icons8.com/?size=100&id=13611&format=png&color=000000"
+              alt="Icono de seguridad 4" />
           </div>
-        </div>
+        </article>
       </section>
-      <section id="footer">
-        <p>PC Componentes y Multimedia SLU CIF B73347494. AVDA Europa, Parcela 2-5 y 2-6. Polígono industrial Las Salinas, 30840, Alhama de Murcia, Murcia. ESPAÑA.</p>
+      <section id="legal">
+        <p>
+          PC Componentes y Multimedia SLU CIF B73347494. AVDA Europa, Parcela
+          2-5 y 2-6. Polígono industrial Las Salinas, 30840, Alhama de Murcia,
+          Murcia. ESPAÑA.
+        </p>
       </section>
     </footer>
   </body>
