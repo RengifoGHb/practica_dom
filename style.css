@@ -803,9 +803,12 @@ h3 {
     width: 1.3rem;
   }
 
-  .list span {
+  #why,
+  #who,
+  #contactUs,
+  #other,
+  #our {
     font-weight: 700;
-    cursor: default;
   }
 
   .list > ul {
@@ -823,6 +826,7 @@ h3 {
 
   .list > ul > li:hover {
     background-color: rgba(128, 128, 128, 0.148);
+    cursor: pointer;
   }
 
   .comunity {
