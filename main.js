@@ -822,3 +822,36 @@ btnSmartPhones.addEventListener('click', function () {
     }
   })
 })
+
+if (window.matchMedia('(max-width: 1023px)').matches) {
+  const btnIds = ['why', 'who', 'contactUs', 'other', 'our']
+
+  const btns = btnIds.map((id) => document.getElementById(id)).filter(Boolean)
+  const articles = btns.map((btn) => btn.closest('article'))
+
+  function hideAllUls() {
+    btns.forEach((btn) => {
+      const ul = btn.nextElementSibling
+      if (ul) ul.style.display = 'none'
+    })
+  }
+
+  articles.forEach((article, i) => {
+    if (!article) return
+
+    article.addEventListener('click', () => {
+      const btn = btns[i]
+      const ul = btn.nextElementSibling
+      if (!ul) return
+
+      const isHidden = window.getComputedStyle(ul).display === 'none'
+
+      if (isHidden) {
+        hideAllUls()
+        ul.style.display = 'block'
+      } else {
+        ul.style.display = 'none'
+      }
+    })
+  })
+}
